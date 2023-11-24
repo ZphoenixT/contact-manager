@@ -1,13 +1,9 @@
 'use strict';
 
-import { createContact, Contact } from './utils';
+import { createContact } from './utils.js';
 
-document.getElementById('addContact').addEventListener('click', function() {
+document.querySelector('.submit').addEventListener('click', function() {
     const newContactInfo = createContact();
-    console.log("New Contact Information:");
-    console.log("Full Name:", newContactInfo.fullName);
-    console.log("City:", newContactInfo.city);
-    console.log("Email:", newContactInfo.email);
 
     const contactPage = document.querySelector('.contactPage');
     const newContactDiv = document.createElement('div');
