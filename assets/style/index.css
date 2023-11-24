@@ -50,6 +50,12 @@ body {
     text-align: center;
 }
 
+.contactText {
+    justify-self: auto;
+    color: var(--col-white);
+    margin-left: 7px;
+}
+
 h1 {
     margin: 55px 0px 25px 0px;
 }
@@ -81,25 +87,36 @@ h1 {
 /* ------------------END OF ADDING CONTACT INFO------------ */
 
 
+/* ------------------CONTACT PAGE-------------------------- */
+
+.contactPage {
+    display: flex;
+    padding: 20px;
+    background-color: #111111;
+    margin-top: 50px;
+}
+
+/* ------------------END OF CONTACT PAGE------------------- */
+
+
 /* ------------------NUMBER OF CONTACTS-------------------  */
 
 .contactNumber {
     height: 40px;
     width: 200px;
+    margin-top: 25px;
     border-radius: 5px;
     background-color: #0993ca;
     line-height: 40px;
     padding: 0px 0px 0px 10px;
-    position: fixed;
-    margin-top: 1500px;
-    margin-left: 900px;
 }
 
 /* ------------------END OF NUMBER OF CONTACTS-------------  */
 
 .contactBox {
     width: 400px;
-    height: 100px;
+    height: 75px;
+    margin: 10px 5px 10px 5px;
     border-radius: 5px;
     background-color: var(--col-main-dark-blue);
 }
