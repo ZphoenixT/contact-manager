@@ -17,8 +17,9 @@ class Contact {
 }
 
 function createContact() {
-    const fullName = document.getElementById('contactInfo').value;
-    const [fullNameInput, cityInput, emailInput] = fullName.split(',').map(info => info.trim());
+    const fullName = document.querySelector('.contactInfo').value;
+    const [fullNameInput, cityInput, emailInput] = 
+    fullName.split(',').map(info => info.trim());
 
     const newContact = new Contact(fullNameInput, cityInput, emailInput);
     return newContact;
