@@ -1,0 +1,98 @@
+@charset "uft-8";
+
+
+:root {
+    --col-main-blue: #01a6e8;
+    --col-main-blue-hover: #0993ca;
+    --col-main-dark-blue: #054c68;
+    --col-white: #edeaea;
+    --col-black: #111111;
+    --col-dark: #1B2430;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: var(--col-dark);
+}
+
+.mainBox {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ------------------TEXT------------------------------- */
+
+.textStyle {
+    color: var(--col-white);
+    text-align: center;
+}
+
+h1 {
+    margin: 55px 0px 25px 0px;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+/* ------------------END OF TEXT------------------------ */
+
+
+/* ------------------ADDING CONTACT INFO---------------- */
+
+.contactInfo {
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #0993ca ;
+    background-color: var(--col-main-dark-blue);
+}
+
+.submit {
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #01a6e8;
+}
+
+/* ------------------END OF ADDING CONTACT INFO------------ */
+
+
+/* ------------------NUMBER OF CONTACTS-------------------  */
+
+.contactNumber {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #0993ca;
+    line-height: 40px;
+    padding: 0px 0px 0px 10px;
+    position: fixed;
+    margin-top: 1500px;
+    margin-left: 900px;
+}
+
+/* ------------------END OF NUMBER OF CONTACTS-------------  */
