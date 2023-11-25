@@ -18,6 +18,7 @@ class Contact {
 
 let contactCounter = 0;
 
+
 function displayContact(contact, contactPage) {
     const contactDiv = document.createElement('div');
     contactDiv.classList.add('contact');
@@ -29,25 +30,25 @@ function displayContact(contact, contactPage) {
     contactPage.appendChild(contactDiv);
 }
 
+
 function addContact(contacts, contactInput, contactPage, createContactDiv) {
     const contactInfo = contactInput.value.trim();
     const [fullName, city, email] = contactInfo.split(',');
 
-    // Validation checks
     const isValidFullName = fullName.trim().length >= 3;
     const isValidCity = city.trim().length >= 3;
     const isValidEmail = email.includes('@') && email.includes('.');
 
     if (!(isValidFullName && isValidCity && isValidEmail)) {
         alert('Please enter valid information.');
-        return; // Exit function if input is invalid
+        return; 
     }
 
     const contactNumberElement = document.querySelector('.contactNumber');
 
     if (contactCounter >= 9) {
         alert('You can only add up to 9 contacts.');
-        return; // Exit function if contacts limit reached
+        return; 
     }
 
     const newContact = new Contact(fullName, city, email);
